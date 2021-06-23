@@ -1,0 +1,29 @@
+import java.util.*;
+class TestThrows{
+static void divide(int x,int y)throws ArithmeticException
+ {
+    int z;
+    z=x/y;
+System.out.println("Quotient="+z);
+}
+public static void main(String args[]){
+   int a,b;
+ Scanner in=new Scanner(System.in);
+ {
+  System.out.println("enter the two value");
+  a=in.nextInt();
+  b=in.nextInt();
+ try
+{
+   divide(8,10);
+   divide(26,3);
+}
+catch(Exception e)
+{
+  System.out.println(e);
+}
+int s=a*b;
+System.out.println("product="+s);
+}
+}
+}
